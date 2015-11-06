@@ -1,5 +1,7 @@
 #twitter2wordcloud
 
+![image](sample.png "sample")
+
 ##About
 make word-cloud-image from one's twitter
 
