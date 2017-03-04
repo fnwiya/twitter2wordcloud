@@ -60,15 +60,24 @@ def getTweets(api, name):
 
 def create_wordcloud(text):
     # ここはPCの環境による。日本語を解析する場合設定必須。
-    fpath = "/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc"
+    # for OSX
+    # fpath = "/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc"
+    # for Ubuntu16.10
+    fpath = "/usr/share/fonts/truetype/takao-gothic/TakaoGothic.ttf"
 
     # ストップワードの設定
-    stop_words = [ u'てる', u'いる', u'なる', u'れる', u'する', u'ある', u'こと',\
-                   u'これ', u'さん', u'して', u'くれる', u'やる', u'くださる',\
-                   u'そう', u'せる', u'した',  u'思う', u'それ', u'ここ', u'ちゃん',\
-                   u'くん', u'', u'て',u'に',u'を',u'は',u'の', u'が', u'と', u'た',\
-                   u'し', u'で', u'ない', u'も', u'な', u'い', u'か', u'ので',\
-                   u'よう', u'']
+    # stop_words = [ u'てる', u'いる', u'なる', u'れる', u'する', u'ある', u'こと',\
+    #                u'これ', u'さん', u'して', u'くれる', u'やる', u'くださる',\
+    #                u'そう', u'せる', u'した',  u'思う', u'それ', u'ここ', u'ちゃん',\
+    #                u'くん', u'', u'て',u'に',u'を',u'は',u'の', u'が', u'と', u'た',\
+    #                u'し', u'で', u'ない', u'も', u'な', u'い', u'か', u'ので',\
+    #                u'よう', u'']
+    stop_words = [ 'てる', 'いる', 'なる', 'れる', 'する', 'ある', 'こと',\
+                   'これ', 'さん', 'して', 'くれる', 'やる', 'くださる',\
+                   'そう', 'せる', 'した',  '思う', 'それ', 'ここ', 'ちゃん',\
+                   'くん', '', 'て','に','を','は','の', 'が', 'と', 'た',\
+                   'し', 'で', 'ない', 'も', 'な', 'い', 'か', 'ので',\
+                   'よう', '']
 
     wordcloud = WordCloud(background_color="white", width=900, height=500,\
                           font_path=fpath, stopwords=set(stop_words)).generate(text)
