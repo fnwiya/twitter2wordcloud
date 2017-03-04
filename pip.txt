@@ -1,0 +1,5 @@
+beautifulsoup4==4.5.1
+matplotlib==1.5.2rc2
+mecab-python==0.996
+tweepy==3.5.0
+wordcloud==1.2.1
