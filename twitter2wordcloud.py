@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import tweepy
+import sys
 
 
 # 認証
@@ -92,7 +93,7 @@ def create_wordcloud(text):
 # メイン
 if __name__ == "__main__":
     # 解析したいユーザ名
-    name = "@"
+    name = "@" + sys.argv[1]
     # 認証
     CONSUMER_KEY = ""
     CONSUMER_SECRET = ""
