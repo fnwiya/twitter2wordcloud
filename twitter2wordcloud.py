@@ -14,6 +14,9 @@ def certify(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET):
     return api
 
 
+def drop_share_title(text):
+    return text.split("/")[0]
+
 # 前処理
 def filter(text):
     # "RT @user:"を削除
@@ -28,7 +31,7 @@ def filter(text):
     # "URL"を削除
     if "http" in text:
         text = text.split("http", 1)[0]
-    return text
+    return drop_share_title(text)
 
 
 # 形態素解析
