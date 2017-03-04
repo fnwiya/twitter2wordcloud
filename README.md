@@ -23,4 +23,4 @@ pip instal -r pip.txt
 
 #### Get your twitter keys from [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new)
 #### Set keys and fonts
-#### At  console ```python witter2wordcloud.py ACOUNT_NAME```
+#### At  console ```python witter2wordcloud.py ACCOUNT_NAME```
