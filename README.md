@@ -8,8 +8,7 @@ make word-cloud-image from one's twitter in Japanese
 
 
 ## Setup
-#### Install some library(matplotlib.pyplot, wordcloud, tweepy)
-
+1. Install some library(matplotlib.pyplot, wordcloud, tweepy)
 ```shell
 # word_cloud
 git clone https://github.com/amueller/word_cloud
@@ -20,7 +19,9 @@ git clone https://github.com/fnwiya/twitter2wordcloud
 cd twitter2wordcloud
 pip instal -r pip.txt
 ```
-
-#### Get your twitter keys from [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new)
-#### Set keys and fonts
-#### At  console ```python witter2wordcloud.py ACCOUNT_NAME```
+2. Get your twitter keys from [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new)
+3. Set keys and fonts
+4. At  console
+```shell
+python witter2wordcloud.py ACCOUNT_NAME
+```
