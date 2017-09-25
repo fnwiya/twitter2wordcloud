@@ -23,5 +23,5 @@ pip instal -r pip.txt
 3. Set keys and fonts
 4. At  console
 ```shell
-python witter2wordcloud.py ACCOUNT_NAME
+python twitter2wordcloud.py ACCOUNT_NAME
 ```
