@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import tweepy
 import sys
+import MeCab
 
 
 # 認証
@@ -50,7 +51,6 @@ def morphologicalAnalysis(mecab, tweet, word2freq):
 # 最新の投稿を取得
 def getTweets(api, name):
     # 形態素解析の準備
-    import MeCab
     mecab = MeCab.Tagger()
     # キーワードの出現頻度を保持する辞書
     from collections import defaultdict
